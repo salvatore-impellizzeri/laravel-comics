@@ -4,7 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>@yield('page-title') | Laravel Start 1</title>
+
+        {{-- GOOGLE FONTS --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        {{-- FONT AWESOME --}}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <title>@yield('page-title')</title>
 
         {{-- Stili nell'head --}}
         <link rel="stylesheet" href="css/style.css">
@@ -18,30 +27,8 @@
 
         @include('partials.header')
 
-        <main>
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col">
-
-                        <div>
-                            <img class="gatto-img" src="{{ Vite::asset('resources/img/gatto.webp') }}" alt="Gatto">
-                        </div>
-
-                        <div class="gatto-bg">
-                            QUESTO DIV AVRA' COME SFONDO IL GATTO
-                        </div>
-
-                        @yield('main-content')
-
-                    </div>
-
-                </div>
-
-            </div>
-        </main>
-
+        @include('partials.main')
+            
         @include('partials.footer')
 
         {{-- JS da importare nel body --}}
