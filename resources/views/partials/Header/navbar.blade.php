@@ -44,9 +44,9 @@ $links = [
 ];
 @endphp
 
-<div class="row container-header m-auto">
+<div class="row container-header m-auto py-4">
     <div class="col-4">
-      <img src="{{ asset('img/dc-logo.png') }}" alt="DC Comics">
+      <img src="public/img/dc-logo.png" alt="DC Comics">
     </div>
 
     <!-- NAV BAR -->
